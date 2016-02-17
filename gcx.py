@@ -41,7 +41,7 @@ class gcx:
 		return json.loads(request.text)
 
 	def cancelorder(self,trader_id,oid):
-		request = requests.post("https://api.gcx.io/orders",data={"trader_id":trader_id,"oid":oid})
+		request = requests.post("https://api.gcx.io/orders/cancel",data={"trader_id":trader_id,"oid":oid})
 		return json.loads(request.text)
 
 	def trade(self,trader_id,shares,price,bidask,order):
