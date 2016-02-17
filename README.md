@@ -3,6 +3,8 @@ Python client for connecting to the GCX API
 
 Using the Python GCX Bindings you can connect to GCX and view your balance, place trades or email/sms Gold Grams.
 
+More information/documentation can be found on https://gcx.io/api/
+
 
 Login
 ```
