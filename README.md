@@ -35,7 +35,7 @@ gcx.getorders(trader_id)
 
 Cancel order
 ```
-gcx.cancelorder(oid)
+gcx.cancelorder(trader_id,oid)
 ```
 
 Withdraw fiat
