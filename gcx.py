@@ -35,6 +35,10 @@ class gcx:
 	def withdrawfiat(self,trader_id,amount):
 		request = requests.post("https://api.gcx.io/withdrawfiat",data={"trader_id":trader_id,"amount":amount})
 		return json.loads(request.text)
+	
+	def fundbtc(self,trader_id,amount,currency):
+		request = requests.post("https://api.gcx.io/preparebtcinvoice",data={"trader_id":trader_id,"currency":currency,"amount":amount})
+		return json.loads(request.text)
 
 	def getorders(self,trader_id):
 		request = requests.post("https://api.gcx.io/orders",data={"trader_id":trader_id})
