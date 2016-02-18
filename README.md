@@ -48,6 +48,11 @@ Place trade to buy/sell Gold
 gcx.trade(trader_id,shares,price,bidask,order)
 ```
 
+Fund account with Bitcoin/Litecoin
+```
+gcx.fundbtc(self,trader_id,amount,currency)
+```
+
 Email gold
 ```
 gcx.emailgold(trader_id,recipientemail,amount)
